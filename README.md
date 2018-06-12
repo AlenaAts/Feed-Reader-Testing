@@ -8,7 +8,7 @@ MIT
 
 ## How to use
 
-You can run the app on it's [GitHub Page]() or simply by downloading ZIP archive with the project and opening index.html file in your browser. Check different feeds by choosing them in the menu.
+Check different feeds by choosing them in the menu. You can clone or download this repository.
 
 ## Libraries
 
