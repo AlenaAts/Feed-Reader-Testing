@@ -94,15 +94,14 @@ $(function() {
          */
          beforeEach(function(done) {
             loadFeed(0, function() {
-                firstFeed = document.querySelector('.feed');
-                done();
+
+                firstFeed = document.querySelector('.feed').innerHTML;
+
+                loadFeed(1, function() {
+                    secondFeed = document.querySelector('.feed').innerHTML;
+                    done();
+                });
             });
-
-            loadFeed(1, function() {
-                secondFeed = document.querySelector('.feed');
-                done();
-            })
-
          });
 
          it('the content actually changes', function() {
