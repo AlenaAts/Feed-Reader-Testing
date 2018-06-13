@@ -77,13 +77,11 @@ $(function() {
          * a single .entry element within the .feed container.
          */
         beforeEach(function(done) {
-            loadFeed(0, function() {
-                done();
-            });
+            loadFeed(0, done);
          });
 
         it('there is at least a single .entry element within the .feed container', function() {
-            expect($('.feed .entry').children()).toBeDefined();
+            expect($('.feed .entry').length).toBeGreaterThan(0);
          });
 
     });
